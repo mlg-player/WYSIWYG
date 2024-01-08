@@ -1,0 +1,11 @@
+.dropdown {
+  width: fit-content;
+}
+
+
+.dropdown__dropdown {
+  position: absolute;
+  left: 0;
+  min-height: 100px;
+  height: fit-content;
+}

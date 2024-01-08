@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  height: 28px;
+  padding: 0px 4px 0px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  border-radius: 4px;
+}
+
+.container:hover {
+  cursor: pointer;
+  background: var(--oc-gray-3, #dee2e6);
+}
+
+.container.open {
+  color: var(--oc-gray-0);
+  background: var(--oc-gray-7, #dee2e6);
+}
+.container.open .icon {
+  fill: var(--oc-gray-0);
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+}

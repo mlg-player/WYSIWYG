@@ -1,0 +1,45 @@
+.colorPicker {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-sizing: border-box;
+  position: relative;
+}
+.colorPicker__color {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  opacity: 0.7;
+  mix-blend-mode: multiply;
+}
+
+.icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 0.2s ease-in-out;
+  width: 22px;
+  height: 22px;
+  background: transparent;
+}
+
+.selected .icon {
+  background: url('data:image/svg+xml,<svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" ><path fill-rule="evenodd" clip-rule="evenodd" d="M12.3222 12.2385C11.5766 12.9573 10.3987 12.9665 9.64207 12.2593L8.89713 11.563C8.53849 11.2278 7.97779 11.2403 7.63453 11.5913V11.5913C7.28456 11.9491 7.29221 12.5232 7.6516 12.8716L9.0374 14.2148C10.1451 15.2884 11.9094 15.2747 13.0003 14.184L17.2773 9.90761C17.6019 9.58306 17.6228 9.06363 17.3254 8.71401V8.71401C16.9962 8.32707 16.4089 8.29806 16.0432 8.65067L12.3222 12.2385Z" fill="white" /></svg>');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.colorPickerList {
+  padding: 8px;
+  gap: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 220px;
+  min-height: 52px;
+  align-items: flex-start;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.12);
+}
